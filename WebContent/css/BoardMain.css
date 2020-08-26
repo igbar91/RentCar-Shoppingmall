@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+li{ list-style: none; }  
+div ul li a{ text-decoration: none; }
+
+.centerBar{
+float:right;
+
+}
+aside{
+left:100;
+margin-top:40px;
+padding: 0;
+position:relative;/* position:absolute; 해놓으면 왼쪽 상단끝으로 붙음*/
+float:left;
+height:100%;
+
+}
+
+.sideBar{
+width:350px;
+background-color:white;
+
+}
+
+.sideBarText{
+list-style:none;
+padding-top: 20px;
+padding-bottom:20px;
+margin-left:100px;
+align:center;
+
+}
+.sideBarText li{
+padding-bottom:15px;
+padding-top:15px;
+border-bottom:1px solid lightgray;
+
+}
+.sideBarText li a{
+color:black;
+font-size:20px;
+}
+
+.sideBarTextStrong{
+	font-size:20px;
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+li{ list-style: none; }  
+a{ text-decoration: none; }
+
+body{
+	margin:0;} 
+
+video{
+	
+ 	width:1600px;
+ 	height:720px;
+text-align:center;
+ position:relative;  
+ margin: 0 auto; 
+ display: block;}
+ 
+ 
+ .flushtextBox{
+ width:1000px;
+ background:black;
+ text-align:center;
+ margin-bottom:30px;
+ 
+/* 지금바로 구매하가기 반짝이는 효과*/
+   animation: flushtextBox-animation 1s steps(10, start) infinite alternate;
+   -webkit-animation: flushtextBox-animation 1s steps(10, start) infinite alternate;
+ }
+ 
+ 
+ @keyframes flushtextBox-animation {
+   from {
+       visibility: visibility;
+   }
+   to {
+       visibility: hidden;
+   }
+}
+@-webkit-keyframes flushtextBox-animation {
+   from {
+       visibility: visibility;
+   }
+   to {
+       visibility: hidden;
+   }
+}
+ /*------------------------- */
+ .flushtext{
+ color:white;
+ font-weight:bold;
+font-size:30px;
+
+ }

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+/* 색깔 자꾸 흰색으로 바껴서 검은색으로 모두 통일 */
+td a{
+	color:black;
+	text-decoration: none;
+}
+
+section table tr td{
+	color:black;
+	
+}
+
+section table tr td a{
+	color:black;
+}
+
+section a{
+	color:black;
+}
+
+.colorChange{
+	color:black;
+}
+
+/* 위치 정렬 */
+/* 버튼부분*/
+.sending{
+
+	padding-top:30px;
+	border:none;
+} 
+
+/* 전체 */
+.sec{
+	margin-left:70px;
+	margin-top:120px;
+	margin-bottom:70px;
+}
+
+.sec table tr td{
+	align:center;
+	padding-top:5px;
+    border-bottom:1px solid lightgray;
+	padding-bottom:10px;
+
+}
+
+.tableCategoryColor{
+	background-color:lightgray;
+}
+
+.tableCategoryColor td{
+	background-color:lightgray;
+	font-size:20px;
+}
+
+.tableInfo td{
+	font-size:15px;
+}

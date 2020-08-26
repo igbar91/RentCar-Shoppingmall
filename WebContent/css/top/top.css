@@ -1,0 +1,67 @@
+
+
+/* CSS할 때 주의할 점 : 
+같은 class, id 라도 
+base 따로
+layout 따로 (틀) 
+세부정보 따로주기 */
+
+
+/* base */
+*{ padding: 0; margin: 0; font-size: 12px; color: black; }/* 폰트색깔 */
+li{ list-style: none; }   * 1) 2) 같은거 */
+a{ text-decoration: none; }
+
+
+
+/* layout */
+header{ width: 100%; height: 175px; margin: 0 auto; background-color: #3F3F3F;} /* 헤더는 바탕 흰색이라 width 크기 상관없음. */ 
+/*section{ width: 100%; height: 900px; margin: 0 auto; }
+section img{ width: 100%; }/* 섹션안에 이미지 크기   width 100% !!! */ 
+footer{ width: 1000px; height: 100px; margin: 0 auto; }
+
+.hTop{ width: 1000px; height: 115px; position: relative; } /*로고쪽 로고 때문에 hTop이랑 t_nav 랑 따로 지정. */ 
+.t_nav{ position: absolute; top: 50px; right: 0; }/* absolute from top 50px ! 로그인 로그아웃쪽*/
+.m_nav{ width: 1000px; height: 60px;}
+
+
+/* t_nav */
+.hTop h1{ 
+	
+	text-align: center; padding-top: 10px; }
+.hTop h1 img{
+	width: 100px; height: 100px;
+}
+.t_nav li{ float: left; padding: 0 10px; background-image: url(./TopImages/tnavLine.gif); background-repeat: no-repeat; background-position: 0 4px;  }
+.t_nav li.first{ background-image: none; }/* 첫번째 메뉴 왼쪽에는 |바를 넣어주지 않는다.*/
+.t_nav li a{ font-size: 14px; color: white; }
+
+
+
+
+/* m_nav */          /* line-height: 수직으로 가운데 정렬할 때 */
+.m_nav > ul > li{ float: left; width: 20%; height: 60px; text-align: center; line-height: 60px; position:relative;}/* 글자관련 최종적으로 a나 span에 적용 */
+.m_nav > ul > li > a{ font-size: 16px; color: #634c3e; padding-bottom: 17px;  }
+.m_nav > ul > li > a > b{ font-size: 25px; font-weight: bold; color: white;}
+/*.m_nav > ul > li > a:hover{ border-bottom: 3px solid red; }
+.m_nav > ul > li > a.on{ border-bottom: 3px solid red; } /* 제이쿼리 적용할 클래스#ff0716  */
+
+/* sub_nav - absolute를 주지 않으면 bg에 가려짐 */
+.sub_nav{ line-height: 40px; position: absolute; top: 70px; left: 0; width: 200px; height: 210px; box-sizing: border-box; text-align: left; z-index: 500;  }
+.mnav01 .sub_nav{ padding-left: 40px; }
+.mnav02 .sub_nav{ padding-left: 50px; }
+.mnav03 .sub_nav{ padding-left: 42px; }
+.mnav04 .sub_nav{ padding-left: 50px; }
+.mnav05 .sub_nav{ padding-left: 35px; }
+.sub_nav > li > a{ font-size: 14px; }
+.s_nav li{ padding-left: 20px; line-height: 25px; background-image: url(./TopImages/listDot.png); background-repeat: no-repeat; background-position: 6px 9px; }
+
+
+/* subBg - 제이쿼리에서 bg에 클래스로 적용 */
+.subBg{ width: 100%; min-width: 1000px; height: 220px; background-color: #DBD9D9; 
+ opacity: 0.8; position: absolute; left: 0; top: 175px; z-index: 400;  }
+
+
+
+
+
